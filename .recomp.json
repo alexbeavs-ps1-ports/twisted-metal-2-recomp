@@ -1,0 +1,13 @@
+{
+  "$schema": "https://recomp.fyi/schema/v1.json",
+  "game": "Twisted Metal 2",
+  "system": "PS1",
+  "type": "recomp",
+  "toolchain": "psxrecomp",
+  "status": "exploring",
+  "project": "twisted-metal-2-recomp",
+  "original": {
+    "region": "USA",
+    "serial": "SCUS-94306"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "format_version": 1,
+  "id": "twisted-metal-2-psx",
+  "name": "Twisted Metal 2",
+  "kind": "recomp",
+  "platform": "psx",
+  "source_repo": "twisted-metal-2-recomp",
+  "rom_identity": {
+    "crc32": [
+      "c8f01e9d"
+    ],
+    "md5": [
+      "21599a9f5d4853461427893774023afa"
+    ],
+    "sha1": [
+      "d5dd081d860ce031a5d9601924c7d0f6afb33814"
+    ],
+    "disc_serials": [
+      "SCUS-94306"
+    ],
+    "sizes": [
+      418187952
+    ],
+    "filenames": [
+      "Twisted Metal 2 (USA).cue",
+      "Twisted Metal 2 (USA) (Track 1).bin"
+    ],
+    "track_counts": [
+      12
+    ],
+    "disc_fps": [
+      "fc12073ddaa6a53f75351e552f3543bc89e6b6c8e9327384c87178f07a01cc6e"
+    ],
+    "require_cue": true
+  },
+  "rom_extensions": [
+    ".cue",
+    ".bin",
+    ".chd"
+  ],
+  "bios_identity": {
+    "required": true,
+    "name": "SCPH1001.BIN",
+    "profile": "SCPH1001",
+    "crc32": [
+      "37157331"
+    ],
+    "md5": [
+      "924e392ed05558ffdb115408c263dccf"
+    ],
+    "sha1": [
+      "10155d8d6e6e832d6ea66db9bc098321fb5e8ebf"
+    ],
+    "sha256": [
+      "71af94d1e47a68c11e8fdb9f8368040601514a42a5a399cda48c7d3bff1e99d3"
+    ],
+    "sizes": [
+      524288
+    ],
+    "filenames": [
+      "SCPH1001.BIN"
+    ]
+  },
+  "release": {
+    "github": "alexbeavs-ps1-ports/twisted-metal-2-recomp",
+    "allow_prerelease": false,
+    "asset_glob": {
+      "windows-x64": "twisted-metal-2-*-windows-x64.zip",
+      "linux-x64": "twisted-metal-2-*-linux-x64.zip",
+      "macos-arm64": "twisted-metal-2-*-macos-arm64.zip",
+      "macos-x64": "twisted-metal-2-*-macos-x64.zip"
+    }
+  },
+  "launch": {
+    "windows": "twisted_metal_2.exe",
+    "linux": "twisted_metal_2",
+    "macos": "twisted_metal_2"
+  },
+  "build": {
+    "source": {
+      "github": "alexbeavs-ps1-ports/twisted-metal-2-recomp",
+      "ref": ""
+    },
+    "toolchain": {
+      "id": "cmake-clang-v1",
+      "min_version": "1.0.14"
+    },
+    "generate": {
+      "engine": "psxrecomp",
+      "config": "game.toml"
+    },
+    "cmake": {
+      "build_dir": "build",
+      "target": "psx-runtime",
+      "config": "Release"
+    }
+  }
+}
